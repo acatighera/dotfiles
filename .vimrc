@@ -1,10 +1,16 @@
-set nocp
-set rtp+=~/.vim/autoload/pathogen.vim
-call pathogen#infect()
+call plug#begin()
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-bundler'
+
 syntax on
 filetype plugin indent on
 
-set guifont=Menlo\ Regular:h14
+set guifont=Monospace\ 10
+set linespace=1
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -16,7 +22,7 @@ let NERDTreeQuitOnOpen=1
 let mapleader = ","
 nmap <leader>n :NERDTreeFocus<cr>
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 set clipboard=unnamed
 
+call plug#end()
