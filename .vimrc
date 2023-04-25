@@ -18,6 +18,9 @@ Plug 'isruslan/vim-es6'
 Plug 'chrisbra/csv.vim'
 Plug 'rking/ag.vim'
 Plug 'valloric/youcompleteme'
+Plug 'rust-lang/rust.vim'
+Plug 'rust-analyzer/rust-analyzer'
+
 
 filetype plugin indent on
 syntax on
@@ -44,7 +47,7 @@ endif
 :colorscheme bubblegum-256-dark
 highlight ColorColumn ctermbg=240 guibg=#000000
 
-set clipboard=unnamed
+set clipboard=unnamedplus
 set nocursorline
 
 let g:go_highlight_functions = 1
@@ -59,10 +62,10 @@ let g:go_bin_path=$HOME."/go/bin"
 
 " searching
 " Use ag over grep
-set grepprg=ag\ --nogroup\ --nocolor
+set grepprg=/usr/bin/ag\ --nogroup\ --nocolor
 
 " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
-let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore .git --ignore .DS_Store -g ""'
+let g:ctrlp_user_command = '/usr/bin/ag %s -l --nocolor --ignore .git --ignore .DS_Store -g ""'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_lazy_update = 150
