@@ -1,0 +1,197 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 38
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + l",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 36,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + j",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 56,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 26,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_RIGHTCTRL+ KEY_PAGEUP",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 30,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT+ a",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 46,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + KEY_LEFTSHIFT +  c",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 18,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + e",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 35,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + h",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 25,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + p",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 47,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + v",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 37,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + k",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 56,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            },
+            {
+                "type": 1,
+                "code": 27,
+                "origin_hash": "0ae3da9ca698bdd79f138544ee9b5a2f"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_RIGHTCTRL + KEY_PAGEDOWN",
+        "mapping_type": "key_macro"
+    }
+]

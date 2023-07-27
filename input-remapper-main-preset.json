@@ -1,48 +1,180 @@
-{
-    "mapping": {
-        "1,29,1+1,46,1": [
-            "KEY_LEFTALT + C",
-            "keyboard"
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 25
+            }
         ],
-        "1,29,1+1,25,1": [
-            "KEY_LEFTALT + P",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + P",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 42
+            },
+            {
+                "type": 1,
+                "code": 56
+            },
+            {
+                "type": 1,
+                "code": 27
+            }
         ],
-        "1,42,1+1,56,1+1,27,1": [
-            "KEY_LEFTCTRL + KEY_TAB",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_RIGHTCTRL + KEY_PAGEDOWN",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 36
+            }
         ],
-        "1,42,1+1,56,1+1,26,1": [
-            "KEY_LEFTSHIFT + KEY_LEFTCTRL + KEY_TAB",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + j",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 35
+            }
         ],
-        "1,29,1+1,36,1": [
-            "KEY_LEFTALT + j",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + h",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 37
+            }
         ],
-        "1,29,1+1,35,1": [
-            "KEY_LEFTALT + h",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + k",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 38
+            }
         ],
-        "1,29,1+1,37,1": [
-            "KEY_LEFTALT + k",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + l",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 47
+            }
         ],
-        "1,29,1+1,38,1": [
-            "KEY_LEFTALT + l",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + v",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 30
+            }
         ],
-        "1,29,1+1,47,1": [
-            "KEY_LEFTALT + v",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + a",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29
+            },
+            {
+                "type": 1,
+                "code": 18
+            }
         ],
-        "1,29,1+1,30,1": [
-            "KEY_LEFTALT + a",
-            "keyboard"
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + e",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 42,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 56,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 26,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
         ],
-        "1,29,1+1,18,1": [
-            "KEY_LEFTALT + e",
-            "keyboard"
-        ]
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_RIGHTCTRL+ KEY_PAGEUP",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 29,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            },
+            {
+                "type": 1,
+                "code": 46,
+                "origin_hash": "650869084d234c8ce49bb632f09ccf3e"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTALT + KEY_LEFTSHIFT +  c",
+        "mapping_type": "key_macro"
     }
-}
+]
