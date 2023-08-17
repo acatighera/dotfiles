@@ -105,7 +105,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "KEY_LEFTALT + v",
+        "output_symbol": "KEY_LEFTALT + Shift_L + v",
         "mapping_type": "key_macro"
     },
     {
@@ -120,7 +120,7 @@
             }
         ],
         "target_uinput": "keyboard",
-        "output_symbol": "KEY_LEFTALT + a",
+        "output_symbol": "KEY_LEFTALT + Shift_L +  a",
         "mapping_type": "key_macro"
     },
     {
