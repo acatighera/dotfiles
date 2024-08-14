@@ -20,6 +20,9 @@ Plug 'rking/ag.vim'
 Plug 'valloric/youcompleteme'
 Plug 'rust-lang/rust.vim'
 Plug 'rust-analyzer/rust-analyzer'
+Plug 'rust-analyzer/rust-analyzer'
+Plug 'mattn/webapi-vim'
+Plug 'w0rp/ale'
 
 
 filetype plugin indent on
@@ -59,6 +62,7 @@ let g:go_highlight_build_constraints = 1
 let g:airline#extensions#whitespace#trailing_format = 'trl[%s]'
 "let g:airline_powerline_fonts=1
 let g:go_bin_path=$HOME."/go/bin"
+"let g:ale_completion_enabled = 1
 
 " searching
 " Use ag over grep
