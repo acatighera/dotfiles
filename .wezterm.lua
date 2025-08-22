@@ -45,16 +45,59 @@ config.font_size = 14.0
 config.enable_tab_bar = false
 config.disable_default_key_bindings = true
 -- config.window_decorations = "NONE"
+config.window_decorations = "TITLE|RESIZE"
 config.keys =  {
     {
       key = 'F11',
       action = wezterm.action.ToggleFullScreen,
     },
-    -- Copy
-     {key="c", mods="CMD", action=wezterm.action{CopyTo="Clipboard"}},
+    -- GUI‑style copy / paste
 
-    -- Paste
-    {key="v", mods="CMD", action=wezterm.action{PasteFrom="Clipboard"}},
+    {
+    key = 'c',
+    mods = 'CTRL',
+    action = wezterm.action_callback(function(window, pane)
+        selection_text = window:get_selection_text_for_pane(pane)
+        is_selection_active = string.len(selection_text) ~= 0
+        if is_selection_active then
+            window:perform_action(wezterm.action.CopyTo('ClipboardAndPrimarySelection'), pane)
+        else
+            window:perform_action(wezterm.action.SendKey{ key='c', mods='CTRL' }, pane)
+        end
+    end),
+    },
+{
+  key  = 'v',
+  mods = 'CTRL',
+  action = wezterm.action_callback(function(window, pane)
+    -- What program is currently running in this pane?
+    local proc = pane:get_foreground_process_name() or ''
+
+    -- `ssh … vim` shows up as just "ssh", so catch that too by
+    -- looking at the title Vim sets when it starts.
+    local title = pane:get_title()
+
+    local inside_vim =
+      proc:match('vim')   or   -- local vim/nvim
+      title:match('vim')  or   -- remote-vim window title
+      title:match('NVIM')      -- neovim’s default title
+
+    if inside_vim then
+      -- Let Vim receive the real <C‑v> (block‑visual mode, etc.)
+      window:perform_action(
+        wezterm.action.SendKey{ key = 'v', mods = 'CTRL' },
+        pane
+      )
+    else
+      -- Otherwise paste the clipboard into the terminal
+      window:perform_action(
+        wezterm.action.PasteFrom 'Clipboard',
+        pane
+      )
+    end
+  end),
+},
+
 
     -- new window
     {
