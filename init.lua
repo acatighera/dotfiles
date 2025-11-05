@@ -1,8 +1,26 @@
-local root = debug.getinfo(1, "S").source:sub(2)
-local root_dir = vim.fn.fnamemodify(root, ":p:h")
-local omarchy_init = root_dir .. "/config/nvim/init.lua"
+vim.opt.termguicolors = true
 
-local ok, err = pcall(dofile, omarchy_init)
-if not ok then
-  vim.notify(("Failed to load Omarchy config (%s): %s"):format(omarchy_init, err), vim.log.levels.ERROR)
+local transparency_groups = {
+  "Normal",
+  "NormalNC",
+  "NormalFloat",
+  "FloatBorder",
+  "SignColumn",
+  "EndOfBuffer",
+  "StatusLine",
+  "StatusLineNC",
+  "WinSeparator",
+}
+
+local function apply_transparency()
+  for _, group in ipairs(transparency_groups) do
+    vim.cmd(("highlight %s guibg=NONE ctermbg=NONE"):format(group))
+  end
 end
+
+apply_transparency()
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  callback = apply_transparency,
+})
