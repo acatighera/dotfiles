@@ -1,0 +1,103 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "margin": "8 8 0 8",
+  "spacing": 8,
+  "gtk-layer-shell": true,
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "cpu",
+    "memory",
+    "battery",
+    "tray"
+  ],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "󰅶",
+      "2": "󰈹",
+      "3": "󰖟",
+      "4": "󰙯",
+      "5": "󰓓",
+      "6": "󰓓",
+      "7": "󰎆",
+      "8": "󰍬",
+      "9": "󰇅",
+      "default": ""
+    },
+    "disable-scroll": true,
+    "all-outputs": true
+  },
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 60,
+    "separate-outputs": true
+  },
+  "clock": {
+    "format": "{:%a %b %d  %H:%M}",
+    "tooltip-format": "{:%A, %B %d %Y\n%I:%M:%S %p}",
+    "interval": 1
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume:2d}%",
+    "format-muted": "󰖁 muted",
+    "format-icons": {
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
+  "network": {
+    "format-wifi": "󰖩 {essid}",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰤭 offline",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "max-length": 22
+  },
+  "cpu": {
+    "format": "󰻠 {usage:2d}%",
+    "tooltip": true
+  },
+  "memory": {
+    "interval": 15,
+    "format": "󰍛 {used:0.1f}G"
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-alt": "{icon} {capacity}% {time}",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰁹"
+    ],
+    "states": {
+      "warning": 25,
+      "critical": 10
+    },
+    "empty_format": ""
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  }
+}
