@@ -148,8 +148,8 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], {desc='Terminal -> Normal'})
 
-vim.o.background = "dark"
-vim.cmd.colorscheme "bubblegum-256-dark"
+-- vim.o.background = "dark"
+-- vim.cmd.colorscheme "bubblegum-256-dark"
 
 local transparency_groups = {
   "Normal",
