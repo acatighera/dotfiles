@@ -34,6 +34,8 @@ local function split_nav(resize_or_move, key)
   }
 end
 
+local is_macos = wezterm.target_triple:find('darwin') ~= nil
+
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
@@ -52,24 +54,35 @@ config.keys =  {
       action = wezterm.action.ToggleFullScreen,
     },
     -- GUI-style copy / paste
-
-     {
-     key = 'Insert',
-     mods = 'CTRL',
-     action = wezterm.action_callback(function(window, pane)
+    {
+      key = 'c',
+      mods = is_macos and 'CMD' or 'CTRL|SHIFT',
+      action = wezterm.action_callback(function(window, pane)
         window:perform_action(wezterm.action.CopyTo('ClipboardAndPrimarySelection'), pane)
-     end),
-     },
- {
-   key  = 'Insert',
-   mods = 'SHIFT',
-   action = wezterm.action_callback(function(window, pane)
-       window:perform_action(
-         wezterm.action.PasteFrom 'Clipboard',
-         pane
-       )
-   end),
- },
+      end),
+    },
+    {
+      key = 'v',
+      mods = is_macos and 'CMD' or 'CTRL|SHIFT',
+      action = wezterm.action_callback(function(window, pane)
+        window:perform_action(wezterm.action.PasteFrom 'Clipboard', pane)
+      end),
+    },
+    -- Linux-style Insert bindings (kept for cross-platform use)
+    {
+      key = 'Insert',
+      mods = 'CTRL',
+      action = wezterm.action_callback(function(window, pane)
+        window:perform_action(wezterm.action.CopyTo('ClipboardAndPrimarySelection'), pane)
+      end),
+    },
+    {
+      key = 'Insert',
+      mods = 'SHIFT',
+      action = wezterm.action_callback(function(window, pane)
+        window:perform_action(wezterm.action.PasteFrom 'Clipboard', pane)
+      end),
+    },
 
 
     -- new window
